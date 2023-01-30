@@ -6,7 +6,7 @@ import { GameOverComponent } from './game-over/game-over.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   title = 'snake';
@@ -173,7 +173,7 @@ export class AppComponent implements OnInit {
 
   restartGame() {
     this.lastMove = '';
-    let dialogref = this.dialog.open(GameOverComponent, {
+    this.dialog.open(GameOverComponent, {
       maxWidth: '100vw',
       maxHeight: '100vh',
       height: '100%',
